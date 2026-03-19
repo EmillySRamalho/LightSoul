@@ -1,0 +1,22 @@
+<svg width="35" height="35" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- carrinho -->
+  <path 
+    d="M5 6H7L9.2 14.5C9.3 14.9 9.7 15.2 10.1 15.2H16.8C17.2 15.2 17.6 14.9 17.7 14.5L19 9H8" 
+    stroke="#7A8F6A" 
+    stroke-width="1.1" 
+    stroke-linecap="round" 
+    stroke-linejoin="round"
+  />
+
+  <!-- rodas -->
+  <circle cx="10.5" cy="18" r="1.2" stroke="#7A8F6A" stroke-width="1.1"/>
+  <circle cx="16.5" cy="18" r="1.2" stroke="#7A8F6A" stroke-width="1.1"/>
+
+  <!-- coração pequeno -->
+  <path 
+    d="M17.8 5.8C17.8 5.3 17.4 4.9 16.9 4.9C16.6 4.9 16.3 5.1 16.2 5.3C16.1 5.1 15.8 4.9 15.5 4.9C15 4.9 14.6 5.3 14.6 5.8C14.6 6.6 16.2 7.5 16.2 7.5C16.2 7.5 17.8 6.6 17.8 5.8Z" 
+    fill="#E6D5C3"
+  />
+
+</svg>
