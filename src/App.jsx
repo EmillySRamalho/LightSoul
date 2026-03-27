@@ -1,17 +1,33 @@
-import React from 'react'
-import Header from './components/Header'
-import Search from './components/Search'
-import Slide from './components/Slide'
-import 'flowbite';
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Header from "./Components/Header";
+import Search from "./Components/Search";
+import Slide from "./Components/Slide";
+import Login from "./pages/Login";
+
+import "flowbite";
+
+const Home = () => {
+  return (
+    <>
+      <Search />
+      <Slide />
+    </>
+  );
+};
 
 const App = () => {
   return (
-    <div>
-      <Header />
-      <Search/>
-      <Slide />
-    </div>
-  )
-}
+    <BrowserRouter>
+      <Header /> {/* aparece em todas as páginas */}
 
-export default App
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
+    </BrowserRouter>
+  );
+};
+
+export default App;
