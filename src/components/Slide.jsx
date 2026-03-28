@@ -36,7 +36,7 @@ const Slide = () => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      {/* SLIDE */}
+
       <div className="relative w-full h-[100px] md:h-[600px] overflow-hidden rounded-2xl shadow-xl mt-10">
         <img
           src={slides[current]}
@@ -44,11 +44,9 @@ const Slide = () => {
           className="w-full h-full object-cover transition-all duration-700"
         />
 
-        {/* overlay */}
         <div className="absolute inset-0 bg-black/30"></div>
       </div>
 
-      {/* BOTÃO ESQUERDO */}
       <button
         type="button"
         onClick={prevSlide}
@@ -94,7 +92,6 @@ const Slide = () => {
         </span>
       </button>
 
-      {/* INDICADORES */}
       <div className="absolute bottom-6 left-1/2 z-30 flex -translate-x-1/2 space-x-3">
         {slides.map((_, index) => (
           <button
