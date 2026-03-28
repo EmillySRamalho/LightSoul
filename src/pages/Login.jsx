@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -12,7 +13,7 @@ const Login = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-[#F7F5F2] ">
-      <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm bg-[#FBF9F7] border border-[#E3EAD8] rounded-x1 p-6 shadow-sm min-h-[450px] min-w-[500px]">
+      <div className="mt-10 w-full max-w-[450px] bg-[#FBF9F7] border border-[#E3EAD8] rounded-xl p-6 shadow-sm min-h-[500px]">
         <h1 className="mt-10 text-center text-2xl/9 font-bold text-[#7A8F6A] tracking-tight">
           Realize o seu Login
         </h1>
@@ -75,6 +76,15 @@ const Login = () => {
               >
                 Entrar
               </button>
+            </div>
+            <div className="text-sm text-center mt-4">
+              <span className="text-gray-600">Não possui cadastro? </span>
+              <Link
+                 to="/cadastro"
+                className="font-semibold text-[#C65D4E] hover:underline"
+              >
+                Cadastre-se
+              </Link>
             </div>
           </form>
         </div>
